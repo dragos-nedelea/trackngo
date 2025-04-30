@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Mostenitorii Web Site">
+    <meta name="keywords" content="Mostenitorii, Dans, popor, dansuri populare, joc de doi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="icon" href="./resources/icons/moldova.png">
+    <title>TrackNGo</title>
+</head>
+
+<body>
+    <div class="preloader-wrapper">
+        <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <section class="header ">
+
+        <nav id="navbar-example2" class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <div>
+                        <span class="hidden">T</span><span class="hidden">r</span><span class="hidden">a</span><span
+              class="hidden">c</span><span class="hidden">k</span><span class="hidden">N</span><span
+              class="hidden">G</span><span class="hidden">o</span>
+
+                    </div>
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a id="home" class="nav-link"
+                                 href="#scrollspyHeading1">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="about" class="nav-link"
+                                 href="#scrollspyHeading2">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="tour" class="nav-link"
+                                 href="#scrollspyHeading3">Interactive Map 
+                                </a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="staff" class="nav-link"
+                                 href="#scrollspyHeading4">Must see</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="contact" class="nav-link"
+                                 href="#scrollspyHeading6">Contact Us</a>
+                        </li>
+
+                    </ul>
+
+                    <div id="navBlock" class="switch">
+                        <!-- Dark/Light Mode -->
+                        <!-- <div>
+                            <a id="serv" class="galanchor nav-item" href="./pages/services.html"
+                                style="text-decoration: none;"> Services</a>
+                        </div> -->
+                        <!-- <ul class="nav-item dropdown md-auto">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><span id="langshow">ENG</span>
+                                <i class="bi bi-globe-europe-africa"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a id="ro" href="#ro" class="nav-link dropdown-item" data-bs-toggle="collapse"
+                                        data-bs-target=".navbar-collapse.show" data-reload> RO</a></li>
+                                <li><a id="eng" href="#eng" class="nav-link dropdown-item" data-bs-toggle="collapse"
+                                        data-bs-target=".navbar-collapse.show" data-reload> ENG</a></li>
+                                <li><a id="ru" href="#ru" class="nav-link dropdown-item" data-bs-toggle="collapse"
+                                        data-bs-target=".navbar-collapse.show" data-reload> RU</a></li>
+                            </ul>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+            data-bs-smooth-scroll="true" class="scrollspy-example  rounded-2" tabindex="0">
+
+            <section id="scrollspyHeading1">
+                <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="./resources/pics/Carousel_1.jpg" class="d-block w-100" alt="Carousel Image">
+                            <div class="carousel-caption">
+                                <span>
+                                    <h5 id="descr1">The Cathedral of Christ's Nativity</h5>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <img src="./resources/pics/Carousel_2.png" class="d-block w-100" alt="Carousel Image">
+                            <div class="carousel-caption d-none d-md-block">
+
+                                <h5 id="descr2"> Cathedral Square in Chisinau</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <img src="./resources/pics/Carousel_3.png" class="d-block w-100" alt="Carousel Image">
+                            <div class="carousel-caption d-none d-md-block">
+
+                                <h5 id="descr3">Chisinau City Gate</h5>
+                            </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden ">Next</span>
+                    </button>
+                </div>
+            <main>
+                <section id="scrollspyHeading2" class="section1">
+
+                    <h4 id="SectionTitle1" class="hidden">About Us</h4>
+
+                    <div class="aboutTextSection">
+                        <div class="hidden">
+                            <div class="hidden">
+                                <h4 id="H1">What is this app about?</h4>
+                                <p class="quesText" id="P1">Our app is designed to help you explore the best of Moldova by providing detailed information about must-see locations, places to rest, and a variety of activities. Whether you're looking for historical sites, outdoor adventures, or local cultural experiences, this app offers categorized recommendations like churches, camping, fishing, and more.</p>
+                            </div>
+                            <div class="hidden">
+                                <h4 id="H2">How do I find places to visit in Moldova?</h4>
+                                <p class="quesText" id="P2">You can use our intuitive search feature to discover places based on categories such as churches, camping, fishing, and others. You can also explore different regions and filter the results according to your interests and preferences. Simply tap on the category or use the search bar to start your journey.</p>
+                            </div>
+                        </div>
+                        <div class="hidden">
+                            <div class="hidden">
+                                <h4 id="H3">Can I find places for outdoor activities like camping and fishing?</h4>
+                                <p class="quesText" id="P3">The app includes a variety of outdoor locations for camping, hiking, fishing, and other recreational activities. You can find camping sites in natural reserves, fishing spots along rivers like the Dniester, and scenic locations perfect for hiking. Each location comes with detailed information, photos, and tips.</p>
+                            </div>
+                            <div class="hidden">
+                                <h4 id="H4"> What makes this app different from other travel apps?</h4>
+                                <p class="quesText" id="P4">Our app is specifically focused on Moldova, offering curated recommendations for unique experiences that highlight the country's natural beauty, culture, and traditions. We also provide practical features such as categorized filters (e.g., churches, camping, fishing) and personalized recommendations based on your interests.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="accordion hidden" id="accordionExample2">
+                        <div class="accordion-item hidden">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <h4 id="h1">What is the value of Moldovan folk dances and traditions?</h4>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p class="quesText" id="p1">The author emphasizes the importance of folk dances,
+                                        songs, legends, and traditions
+                                        as a national treasure inherited from ancestors. For the author, dance is a form
+                                        of
+                                        hidden language that visualizes the soul's ardor and spiritual impulses.
+                                        Moldovans
+                                        use dance to express their feelings and preserve their cultural identity. The
+                                        author
+                                        believes that preserving and valuing folklore is essential to preserving Moldova
+                                        as
+                                        a distinct nation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item hidden">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <h4 id="h2">Why is dance the passion of the author?</h4>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p class="quesText" id="p2">The author, who is a choreographer, sees dance as a
+                                        passion and love that also enters
+                                        their professional duties. They teach children and teenagers to move in rhythm
+                                        and
+                                        learn the steps of traditional Moldovan dances. The author finds enormous joy in
+                                        seeing their pupils dance professionally and bathe in the applause that only
+                                        artists
+                                        receive. For the author, dance satisfies a spiritual need and lust of the soul,
+                                        bringing joy to the body.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item hidden">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <h4 id="h3">How did the Mostenitorii ensemble come to be?</h4>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p class="quesText" id="p3">The Mostenitorii ensemble was founded in 1994 with a
+                                        small team of only 16 children
+                                        and teenagers. In three years, the team had grown to 48 members and became the
+                                        winner of the national festival for children, Alunelul. The ensemble's mission
+                                        is to
+                                        valorize traditional culture, national dress, costumes, folk traditions, and
+                                        games
+                                        characteristic of the region they represent. The ensemble has become one of the
+                                        best
+                                        ensembles for children in Moldova, with numerous successes and awards in
+                                        national
+                                        and international contests and festivals.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item hidden">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <h4 id="h4">How does the Mostenitorii ensemble contribute to the preservation of
+                                        Moldovan
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <p class="quesText" id="p4">The Mostenitorii ensemble has taught over 400 children
+                                        in two decades and currently
+                                        has 140 children aged 6-19 years old divided into three choreographic groups.
+                                        The
+                                        team has presented hundreds of shows on important stages in Moldova and abroad,
+                                        and
+                                        their repertoire includes traditional Moldovan folk dances that reflect famous
+                                        traditions, customs, and habits. Each member of the ensemble has a genuine
+                                        national
+                                        costume. Through their talent, dedication, and perseverance, the Mostenitorii
+                                        ensemble contributes to the preservation and valorization of Moldovan cultural
+                                        richness and traditional choreographic values.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="scrollspyHeading3" class="section2">
+                    <h4 id="SectionTitle2" class="hidden">Our Moldova Tour Map <span class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-secondary" style="font-size: 0.75rem; padding: 0.25em 0.4em;">
+                        Clickable
+                      </span></h4>
+                    <div id="app" class="hidden">
+                        <div class="title" id="mapTitle">
+                            <div>
+                                <div class="hidden">
+                                    <p id="Map1"><i>Explore</i></p>
+                                </div>
+                                <div class="hidden">
+                                    <p id="Map2"><i>Moldova </i></p>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="d-none" id="interactiveModal">
+                                <div class="map-content">
+                                    <div class="map-header">
+                                        <h1 class="map-title fs-5" id="Tform">Let's get in</h1>
+                                    </div>
+                                    <div class="map-body">
+                                        <form action="#" method="POST" id="formular">
+                                            <label class="form-text" for="region" id="Rform">Your region: <span id="regionID" style="font-weight: bold; color: white;"></span></label>
+                                            <br> <br>
+                                            <label class="form-text" for="dancers" id="Dform">What do you want to experience?
+                                            </label>
+                                            <select name="cars" id="dancers">
+                                                <option value="2">Churches</option>
+                                                <option value="4">Fishing</option>
+                                                <option value="6">Beach and some nature</option>
+                                            </select>
+                                            <br> <br>
+                                            <label class="form-text" for="tel" id="Pform">Telefon: </label>
+                                            <input name="data[Telefon]" type="tel" id="Pnumb" required>
+                                            <br> <br>
+                                            <label class="form-text" for="dancers" id="Dform">Choose how many:
+                                            </label>
+                                            <select name="cars" id="dancers">
+                                                <option value="2">2</option>
+                                                <option value="4">4</option>
+                                                <option value="6">6</option>
+                                            </select>            
+                                            <br> <br>
+                                            <label class="form-text" for="date" id="Dateform">Set date: </label>
+                                            <input type="date" id="date" name="date">
+                                            <br> <br>
+    
+                                            <!-- <p class="form-text" id="formDisc">After submiting you'll be contacted, and your
+                                                picked date will be displayed in our calendar.</p> -->
+    
+                                            <div class="map-footer d-flex justify-content-between">
+                                                <p class="text-white"><span id="priceText">Price:</span> <span id="price">0</span> <span id="currency">EUR</span></p>
+                                                <p id="dateCheck" class="text-white"></p>
+                                                <button type="submit" class="cta-btn2 btn-warning"
+                                                    id="Bform">Search</button>
+                                            </div>
+                                        </form>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <div >
+                                <div id="svg-container"  data-bs-toggle="popover"
+                                data-bs-placement="right"
+                                data-bs-html="true"
+                                data-bs-content='<img src="your-image.svg" alt="Map preview" style="width: 150px;">'>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                </section>
+
+                <section id="scrollspyHeading4" class="section3">
+                    <h4 id="SectionTitle3" class="hidden">We recommend...</h4>
+                    <div class="cards hidden">
+                        <div class="card col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 hidden" style="width: 18rem;">
+                            <img src="./resources/pics/orhei-vechi.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-family: 'Libre Baskerville', serif;"><b>Orheiul Vechi</b></h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item fst-italic" id="elenaDesc">Artistic/traditional landscapes
+                                    </li>
+                                </ul>
+                                <p class="card-text" style="font-family: 'Eczar', serif;" id="elenaCitate">The love for
+                                    dances is spread by her cautiously.</p>
+                            </div>
+                        </div>
+                        <div class="card col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 hidden" style="width: 18rem;">
+                            <img src="./resources/pics/fetesti.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-family: 'Libre Baskerville', serif;"><b>Fetesti</b></h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item fst-italic" id="mihaiDesc">Little Switzerland of Moldova</li>
+                                </ul>
+                                <p class="card-text" style="font-family: 'Eczar', serif;" id="mihaiCitate">His music
+                                    inspire and enlighten us to dance.</p>
+                            </div>
+                        </div>
+                        <div class="card col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 hidden" style="width: 18rem;">
+                            <img src="./resources/pics/cetatea-soroca.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-family: 'Libre Baskerville', serif;"><b>Cetatea Soroca</b></h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item fst-italic" id="ninaDesc">Majestic Fortress</li>
+                                </ul>
+                                <p class="card-text" style="font-family: 'Eczar', serif;" id="ninaCitate">She's the one
+                                    giving us the example to follow.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="scrollspyHeading6" class="section5">
+                    <h4 id="SectionTitle5" class="hidden">Contact Us</h4>
+
+                    <div class="PMForm hidden" id="pnform">
+                        <div class="container">
+                            <p class="title" id="formTitle">Complete the form...</p>
+                            <p class="description" id="formDesc">We need you to help us maintain the traditions.
+                            </p>
+                        </div>
+                        <div class="container">
+                            <div class="Form">
+                                <form id="form" action="https://formsubmit.co/mostenitorii_riscani@yahoo.com"
+                                    method="POST">
+
+                                    <div class="col vector5">
+                                        <div class="vector5">
+
+                                            <input class="form-control" id="surname" type="text" name="name"
+                                                placeholder="First Name" required>
+
+                                        </div>
+                                        <div class="vector5">
+
+                                            <input class="form-control" id="Name" type="text" name="surname"
+                                                placeholder="Last Name" required>
+
+                                        </div>
+                                    </div>
+                                    <div class="vector6">
+                                        <input class="form-control" id="email" type="email" name="email"
+                                            placeholder="E-mail address" required>
+
+                                    </div>
+                                    <div class="vector7">
+                                        <input class="form-control" id="Pnumb" type="tel" name="phone"
+                                            placeholder="Phone Number" required>
+
+                                    </div>
+                                    <div class="vector8">
+                                        <textarea id="YrMess" name="Message" class="usermess form-control" type="text"
+                                            placeholder="Your Message"></textarea>
+
+                                    </div>
+                                    <div class="check">
+                                        <input class="checkbox form-control" type="checkbox" id="chbox" required>
+                                        <p id="chbText" class="checkP">I agree with terms and
+                                            conditins.</p>
+                                    </div>
+                                    <button type="submit" class="submitbtn" id="submit_btn">
+                                        <p id="btnText">Send</p>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            </section>
+    <footer class="bg-dark text-white pt-5 pb-4">
+
+        <div class="container  text-md-left">
+
+            <div class="blocks row text-md-left">
+
+                <div class="col-m-3 col-lg-3 col-xl-3 mx-auto mt-3 hidden">
+                    <h5 id="oword" class="text-uppercase mb-4 font-weight-bold text-warning">Our word</h5>
+                    <p id="footercitate">We, those who came from the people, who grew up rocked by these songs,
+                        are
+                        obliged to preserve
+                        them with the sanctity with which the heritage from an entire nation is preserved, we
+                        must watch
+                        over this treasure</p>
+
+                </div>
+
+                <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 hidden">
+                    <h5 id="products" class="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>
+                    <p>
+                        <a id="morevids" class="moreanchor" href="./pages/Videos.html" class="text-white"
+                            style="text-decoration: none;">More Videos</a>
+                    </p>
+                    <p>
+                        <a id="galId" class="galanchor" href="./pages/gallery.html" class="text-white"
+                            style="text-decoration: none;"> Gallery</a>
+                    </p>
+
+                </div> -->
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 hidden">
+                    <h5 id="usefullinks" class="text-uppercase mb-4 font-weight-bold text-warning ">Useful links
+                    </h5>
+                    <div class="socialmedia ">
+
+                        <a href="https://www.facebook.com/mostenitoriiriscani/" target="_blank" class="text-white"
+                            style="text-decoration: none;"><img class="socialmedicons"
+                                src="./resources/icons/facebook.png" alt="Facebook icon" title="Facebook"></a>
+                        <a href="https://www.youtube.com/@Mostenitorii-xx1hn" target="_blank" class="text-white"
+                            style="text-decoration: none;"><img class="socialmedicons"
+                                src="./resources/icons/youtube.png" alt="Youtube icon" title="Youtube"></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js">
+    </script>
+    <script src="./js/api/api.js"></script>
+
+</body>
+<script type="module" src="../js/map.js"></script>
+
+</html>

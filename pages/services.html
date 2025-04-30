@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Mostenitorii Web Site">
+    <meta name="keywords" content="Mostenitorii, Dans, popor, dansuri populare, joc de doi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="icon" href="../resources/icons/dance.png">
+    <title>Moștenitorii</title>
+
+</head>
+
+<body>
+
+    <div class="preloader-wrapper">
+        <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <section class="header ">
+
+        <nav id="navbar-example2" class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <!-- <img src="./resources/pics/LogoMostenitorii.jpg" alt=""> -->
+                    <div>
+                        <span class="hidden">M</span><span class="hidden">o</span><span class="hidden">ș</span><span
+                            class="hidden">t</span><span class="hidden">e</span><span class="hidden">n</span><span
+                            class="hidden">i</span><span class="hidden">t</span><span class="hidden">o</span><span
+                            class="hidden">r</span><span class="hidden">i</span><span class="hidden">i</span>
+
+                    </div>
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a id="home" class="nav-link" data-bs-toggle="collapse"
+                                data-bs-target=".navbar-collapse.show" href="#scrollspyHeading1">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="OurCalendar" class="nav-link" data-bs-toggle="collapse"
+                                data-bs-target=".navbar-collapse.show" href="#scrollspyHeading3">Our Calendar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navDancers" class="nav-link" data-bs-toggle="collapse"
+                                data-bs-target=".navbar-collapse.show" href="#scrollspyHeading2">Dancers at events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="traditions" class="nav-link" data-bs-target=".navbar-collapse.show"
+                                href="#scrollspyHeading4">Ceremony Dances</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a id="repert" class="nav-link" data-bs-target=".navbar-collapse.show"
+                                href="../index.html">Repertory</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="contact" class="nav-link" data-bs-target=".navbar-collapse.show"
+                                href="../index.html">Contact Us</a>
+                        </li> -->
+
+                    </ul>
+
+                    <div id="navBlock" class="switch">
+                        <!-- Dark/Light Mode -->
+                        <div>
+                            <a id="serv" class="galanchor nav-item" href="#" style="text-decoration: none;">
+                                Services</a>
+                        </div>
+                        <ul class="nav-item dropdown md-auto">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><span id="langshow">ENG</span>
+                                <i class="bi bi-globe-europe-africa"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a id="ro" href="#ro" class="nav-link dropdown-item" data-bs-toggle="collapse"
+                                        data-bs-target=".navbar-collapse.show" data-reload> RO</a></li>
+                                <li><a id="eng" href="#eng" class="nav-link dropdown-item" data-bs-toggle="collapse"
+                                        data-bs-target=".navbar-collapse.show" data-reload> ENG</a></li>
+                                <li><a id="ru" href="#ru" class="nav-link dropdown-item" data-bs-toggle="collapse"
+                                        data-bs-target=".navbar-collapse.show" data-reload> RU</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+                data-bs-smooth-scroll="true" class="scrollspy-example  rounded-2" tabindex="0">
+                <section id="scrollspyHeading1">
+                    <div class="videocontainer">
+
+                        <video class="videoembed" autoplay muted loop>
+                            <source src="../resources/pics/Service/Video/1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+                    </div>
+                </section>
+
+                <section id="scrollspyHeading3" class="section2">
+                    <h4 id="SectionTitle2" class="hidden">Our Calendar</h4>
+                    <div id="app" class="hidden">
+                        <div class="title">
+                            <div class="calendarText">
+                                <div class="hidden">
+                                    <p id="Map1"><i>Booked</i></p>
+                                </div>
+                                <div class="hidden">
+                                    <p id="Map2"><i>dates:</i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="calendar">
+
+                        </div>
+                    </div>
+                </section>
+                <section id="scrollspyHeading2" class="section3">
+                    <h4 id="SectionTitle3" class="hidden">Dancers at events</h4>
+
+                    <div class="cta hidden">
+                        <p class="title3" id="title3">If you need to cheer up your ceremony</p>
+                        <p class="subtitle3" id="subtitle3">Contact us, we can help you with it!</p>
+                        <button class=" btn-primary cta-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            type="button" id="myButton">
+                            <p id="titleBtn">Contact</p>
+                        </button>
+                    </div>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="Tform">Hire dancers for your ceremony</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="#" method="POST" id="formular">
+                                        <label class="form-text" id="Nameform">Name: </label>
+                                        <input name="data[Nume]" minlength="3" id="Name" maxlength="15" type="text"
+                                            class="input" required>
+                                        <br> <br>
+                                        <label class="form-text" for="tel" id="Pform">Telefon: </label>
+                                        <input name="data[Telefon]" type="tel" id="Pnumb" required>
+                                        <br> <br>
+                                        <label class="form-text" for="dancers" id="Dform">Choose how many dancers:
+                                        </label>
+                                        <select name="cars" id="dancers">
+                                            <option value="2">2</option>
+                                            <option value="4">4</option>
+                                            <option value="6">6</option>
+                                        </select>
+                                        <br> <br>
+                                        <label class="form-text" for="region" id="Rform">Choose your region: </label>
+                                        <select name="cars" id="region">
+                                            <option value="Râșcani">Râșcani</option>
+                                            <option value="Bălți">Bălți</option>
+                                            <option value="Drochia">Drochia</option>
+                                        </select>
+                                        <br> <br>
+                                        <label class="form-text" for="date" id="Dateform">Set date: </label>
+                                        <input type="date" id="date" name="date">
+                                        <br> <br>
+
+                                        <!-- <p class="form-text" id="formDisc">After submiting you'll be contacted, and your
+                                            picked date will be displayed in our calendar.</p> -->
+
+                                        <div class="modal-footer d-flex justify-content-between">
+                                            <p class="text-white"><span id="priceText">Price:</span> <span id="price">0</span> <span id="currency">EUR</span></p>
+                                            <p id="dateCheck" class="text-white"></p>
+                                            <button type="submit" class="cta-btn2 btn-primary"
+                                                id="Bform">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal" id="modal">
+
+                        <div data-close-button class="close-btn" id="closeButton">&times;</div>
+
+                    </div>
+                    <div class="overlay" id="overlay-toggle"></div>
+
+                </section>
+
+                <section id="scrollspyHeading4" class="section4">
+                    <h4 id="SectionTitle4" class="hidden">Ceremony Dances</h4>
+                    <div id="carouselExampleIndicators" class="carousel carousel-dark slide w-100"
+                        data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="repSectioncar">
+                                    <div class=" repContainer">
+                                        <div class="hidden">
+                                            <img src="../resources/pics/DC1.jpeg" class="rep1odd img-fluid" alt="...">
+                                        </div>
+                                        <div class="hidden">
+                                            <h1 class="DanceTitle" style="font-family: 'Libre Baskerville', serif;">
+                                                <i>"Podul de flori"</i>
+                                            </h1>
+                                            <p id="podul" style="font-family: 'Eczar', serif;">
+                                                The tradition of the bridge of flowers at weddings is a popular practice
+                                                in many cultures and countries around the world. This involves creating
+                                                a decorative bridge, made of flowers or other decorative materials, that
+                                                the bride and groom cross as they make their way to the altar or during
+                                                the wedding party.
+
+                                                <sub class="mediaText">The bridge of flowers symbolizes the transition
+                                                    from the life of a
+                                                    bachelor or from the life of a girl to the life of a married couple.
+                                                    As
+                                                    they walk through the bridge of flowers, the bride and groom are
+                                                    encouraged to focus on their love and commitment to each other as
+                                                    they
+                                                    symbolize an important transition in their lives.
+
+                                                    This tradition can be customized according to the tastes and
+                                                    preferences
+                                                    of each couple with different types of flowers, colors and
+                                                    decoration
+                                                    styles. The flower bridge can be placed in different locations -
+                                                    outside
+                                                    the church or inside the wedding hall - and can be created with the
+                                                    help
+                                                    of family or friends, who can contribute flowers or other decorative
+                                                    materials.</sub>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="repSectioncar">
+                                    <div class=" repContainer">
+                                        <div class="hidden">
+                                            <h1 style="font-family: 'Libre Baskerville', serif;"><i>"Încuscritul"</i>
+                                            </h1>
+                                            <p id="incuscr" style="font-family: 'Eczar', serif;">
+                                                The tradition of incarceration is one of the oldest and most important
+                                                traditions of Romanian weddings and involves a man from the groom's
+                                                family going to the bride's house to propose to her. This ceremony takes
+                                                place before the wedding and is considered a symbol of respect,
+                                                tradition and family unity.
+
+                                                <sub class="mediaText">In the enshrinement ceremony, the man who
+                                                    proposes to the bride brings
+                                                    with him gifts for her family, such as bread and salt, symbols of
+                                                    prosperity and well-being. Before being allowed into the house, the
+                                                    man
+                                                    must go through several preparatory tests, which may include dancing
+                                                    with the bride or even negotiating a price to take the bride.
+
+                                                    If the man manages to successfully complete all these tests, then
+                                                    the
+                                                    bride is given in marriage and the two will unite their destinies in
+                                                    a
+                                                    festive way at the wedding. In this way, the tradition of the
+                                                    enshrined
+                                                    is a particularly important moment for both families and is
+                                                    considered a
+                                                    way to strengthen the bonds between them.</sub>
+                                            </p>
+                                        </div>
+                                        <div class="hidden">
+                                            <img src="../resources/pics/DC2.jpg" class="rep2even img-fluid" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="repSectioncar">
+                                    <div class=" repContainer">
+                                        <div class="hidden">
+                                            <img src="../resources/pics/DC3.jpg" class="rep1odd img-fluid" alt="...">
+                                        </div>
+                                        <div class="hidden">
+                                            <h1 class="DanceTitle" style="font-family: 'Libre Baskerville', serif;">
+                                                <i>"Colacul Miresei"</i>
+                                            </h1>
+                                            <p id="colacul" style="font-family: 'Eczar', serif;">
+                                                The bride's veil is a tradition at Romanian weddings, which represents a
+                                                symbol of unity and the bond between the bride and groom. The cola is
+                                                usually a ring made of bread, decorated with flowers, ribbons and other
+                                                decorative elements.
+
+                                                During the wedding ceremony, the bride and groom take the coil in their
+                                                hands and break it together, thus symbolizing that they will be united
+                                                and share everything in their life together.<sub class="mediaText">After
+                                                    the coil is
+                                                    broken,
+                                                    each of the two will take a piece and put it in the other's mouth,
+                                                    thus
+                                                    symbolizing the promise to feed and support each other for the rest
+                                                    of
+                                                    their lives.
+
+                                                    In some regions of the country, the bride's cake is made of a sweet
+                                                    dough, decorated with raisins or other dried fruits, and in other
+                                                    regions it is made of a simpler dough, without added sugar.
+
+                                                    The tradition of the bride's bun is an old practice that dates back
+                                                    to
+                                                    ancient times and is still respected and practiced in many areas of
+                                                    Romania. This tradition is considered an important moment of the
+                                                    wedding
+                                                    ceremony and a symbol of love and unity between the bride and
+                                                    groom.</sub></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="bg-dark text-white pt-5 pb-4">
+
+            <div class="container  text-md-left">
+
+                <div class="blocks row text-md-left">
+
+                    <div class="col-m-3 col-lg-3 col-xl-3 mx-auto mt-3 hidden">
+                        <h5 id="oword" class="text-uppercase mb-4 font-weight-bold text-warning">Our word</h5>
+                        <p id="footercitate">We, those who came from the people, who grew up rocked by these songs,
+                            are
+                            obliged to preserve
+                            them with the sanctity with which the heritage from an entire nation is preserved, we
+                            must watch
+                            over this treasure</p>
+
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 hidden">
+                        <h5 id="products" class="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>
+                        <p>
+                            <a id="morevids" class="moreanchor" class="moreanchor" href="../pages/Videos.html"
+                                class="text-white" style="text-decoration: none;"> More Videos</a>
+                        </p>
+                        <p>
+                            <a id="galId" class="galanchor" href="../pages/gallery.html" class="text-white"
+                                style="text-decoration: none;"> Gallery</a>
+                        </p>
+                        <!-- <p>
+                            <a id="serv" class="galanchor" href="#" class="text-white" style="text-decoration: none;">
+                                Services</a>
+                        </p> -->
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 hidden">
+                        <h5 id="usefullinks" class="text-uppercase mb-4 font-weight-bold text-warning ">Useful links
+                        </h5>
+                        <div class="socialmedia ">
+
+                            <a href="https://www.facebook.com/mostenitoriiriscani/" target="_blank" class="text-white"
+                                style="text-decoration: none;"><img class="socialmedicons"
+                                    src="../resources/icons/facebook.png" alt="Facebook icon" title="Facebook"></a>
+                            <a href="https://www.youtube.com/@Mostenitorii-xx1hn" target="_blank" class="text-white"
+                                style="text-decoration: none;"><img class="socialmedicons"
+                                    src="../resources/icons/youtube.png" alt="YouTube icon" title="YouTube"></a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 hidden">
+                        <h5 id="fcontact" class="text-uppercase mb-4 font-weight-bold text-warning ">Contact</h5>
+                        <p>
+                            <i class="bi bi-geo-fill"></i> Str. Gh.Râșcanu 3, or.Rîșcani
+                        </p>
+                        <p>
+                            <a class="gmail" target="_blank"
+                                href="mailto:recipient@example.com?subject=Subject%20Line&body=Email%20body%20text"><i
+                                    class="bi bi-envelope-fill"></i>
+                                mostenitorii_riscani@yahoo.com</a>
+                        </p>
+                        <a class="phone" href="tel:069020925">
+                            <i class="bi bi-telephone-fill"></i> +373 690-20-925
+                        </a>
+                        <p>
+                            <i class="fas fa-home mr-3"></i>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="disclaimer">
+                <div id="disclaim">This website was made in the "Tekwill Junior Ambassadors" competition organized by
+                    The project "Tekwill in each school" and does not necessarily reflect the opinion of the project.
+                </div>
+            </div>
+
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+            integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+            crossorigin="anonymous"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/index.global.min.js'></script>
+
+        <script type="module" src="../js/Services.js"></script>
+
+</body>
+
+</html>
