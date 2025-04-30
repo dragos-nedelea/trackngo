@@ -4,7 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const filePath = `${isGitHubPages ? '/' + repoName : ''}/resources/pics/md.svg`;
 
   fetch(filePath)
-    .then(res => res.text())
+    .then(res => {
+      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+      return res.text();
+    })
     .then(svg => {
       document.getElementById('svg-container').innerHTML = svg;
 
@@ -17,7 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       });
     })
-    .catch(err => console.error('Error loading SVG:', err));
+    .catch(err => {
+      console.error('Error loading SVG:', err);
+      document.getElementById('svg-container').textContent = 'Failed to load SVG';
+    });
 });
 
 // -----------------------------------------------------------------------------------------------------------------------------------
