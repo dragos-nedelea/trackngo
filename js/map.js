@@ -1,23 +1,23 @@
-// Fetch the SVG and insert it into the container
 document.addEventListener('DOMContentLoaded', function () {
-  // Your existing JS code here
-  
-  fetch('/trackngo/resources/pics/md.svg')
+  const isGitHubPages = location.hostname.includes('github.io');
+  const repoName = isGitHubPages ? location.pathname.split('/')[1] : '';
+  const filePath = `${isGitHubPages ? '/' + repoName : ''}/resources/pics/md.svg`;
+
+  fetch(filePath)
     .then(res => res.text())
     .then(svg => {
       document.getElementById('svg-container').innerHTML = svg;
 
-      // Once the SVG is loaded, add event listeners to the paths
       const regions = document.querySelectorAll('path.region');
-
       regions.forEach(region => {
         region.addEventListener('click', () => {
-          const regionName = region.dataset.name; // Get the region name from the data-name attribute
-          handleRegionClick(); // Open the modal
-          handlePathClick(regionName); // Update the modal content with the region name
+          const regionName = region.dataset.name;
+          handleRegionClick();
+          handlePathClick(regionName);
         });
       });
-    });
+    })
+    .catch(err => console.error('Error loading SVG:', err));
 });
 
 // -----------------------------------------------------------------------------------------------------------------------------------
