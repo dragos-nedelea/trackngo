@@ -7,11 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   </head>
   <body>
-    <?xml version="1.0"?>
-
-    <!--********* Copyright (c) 2024 Pareto Softare, LLC DBA Simplemaps.com ***************************************
-************* Free for Commercial Use, full terms at  https://simplemaps.com/resources/svg-license ************
-************* Attribution is appreciated! https://simplemaps.com *******************************************-->
 
     <svg
       class="svgMap"
@@ -20,7 +15,7 @@
       stroke-linecap="round"
       stroke-linejoin="round"
       version="1.2"
-      viewbox="0 0 1000 1000"
+      viewBox="0 0 1000 1000"
       width="auto"
       xmlns="http://www.w3.org/2000/svg"
     >
