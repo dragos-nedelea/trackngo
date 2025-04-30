@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Your existing JS code here
   
-  fetch('./resources/pics/md.svg')
+  fetch('/trackngo/resources/pics/md.svg')
     .then(res => res.text())
     .then(svg => {
       document.getElementById('svg-container').innerHTML = svg;
